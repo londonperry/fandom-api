@@ -41,7 +41,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     }
 
 
-    const characters = await prisma.op_character.findMany(queryConfig);
+    const characters = await prisma./*Replace Me*/_character.findMany(queryConfig);
     return res.status(200).json(characters);
 }
 
